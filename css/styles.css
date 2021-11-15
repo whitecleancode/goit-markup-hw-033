@@ -26,6 +26,17 @@ body {
   font-weight: 400;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0px;
+}
+
 .page {
   background-color: var(--bg-color-section-one);
 }
@@ -42,7 +53,6 @@ body {
 
 /* header */
 .header {
-  width: 1600px;
   height: 80px;
   display: flex;
   background-color: #ffffff;
@@ -127,6 +137,7 @@ body {
 
 /* hero */
 .hero {
+  padding: 200px 0;
   text-align: center;
   background-color: var(--hero-ftr-color);
 }
@@ -134,7 +145,6 @@ body {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
   margin-bottom: 30px;
 
   color: var(--header-color);
@@ -152,7 +162,6 @@ body {
   border: 0px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
   cursor: pointer;
   background-color: var(--accent-color);
   color: var(--header-color);
@@ -171,10 +180,18 @@ body {
 
 .feature-list {
   display: flex;
+  margin: 94px auto;
+}
+
+.feature-items {
+  margin-right: 30px;
+}
+
+.feature-items:last-child {
+  margin-right: 0px;
 }
 
 .feature-title {
-  margin-top: 94px;
   text-decoration: none;
   color: var(--title-color);
   font-weight: 700;
@@ -184,7 +201,15 @@ body {
   text-transform: uppercase;
 }
 
+.item {
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section-title {
+  padding-bottom: 50px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
