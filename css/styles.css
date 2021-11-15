@@ -36,10 +36,18 @@ body {
 
 /* header */
 .header {
+  width: 1600px;
+  height: 80px;
+  display: flex;
   background-color: #ffffff;
 }
 
 .logo {
+  display: inline-block;
+  margin-left: 215px;
+  margin-right: 93px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -53,7 +61,15 @@ body {
 }
 /* site nav */
 
+.site-nav {
+  display: flex;
+  margin: 32px 0px;
+  padding-left: 0px;
+}
+
 .site-nav .link {
+  margin-right: 50px;
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -61,6 +77,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+
+.link.contacts {
+  margin-right: 0;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -68,7 +89,19 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
 .mail {
+  margin: 32px 50px 32px 331px;
+  color: #757575;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.tel {
+  margin: 32px 215px 32px 0px;
   color: #757575;
   font-weight: 500;
   text-decoration: none;
@@ -86,14 +119,10 @@ body {
   color: var(--accent-color);
 }
 
-.tel {
-  color: #757575;
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.mail > a {
+  margin-left: auto;
 }
+
 /* hero */
 .hero {
   background-color: var(--hero-ftr-color);
