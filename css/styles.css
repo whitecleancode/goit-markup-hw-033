@@ -34,6 +34,12 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* header */
 .header {
   width: 1600px;
@@ -121,18 +127,13 @@ body {
 
 /* hero */
 .hero {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-
   text-align: center;
   background-color: var(--hero-ftr-color);
 }
 .hero-title {
-  margin-left: 452px;
-  margin-right: 452px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 200px;
   margin-bottom: 30px;
 
@@ -147,11 +148,6 @@ body {
 }
 
 .button {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 350px;
   padding: 10px 32px 10px 32px;
   border: 0px;
   margin-left: auto;
@@ -173,7 +169,12 @@ body {
   background-color: #e5e5e5;
 }
 
+.feature-list {
+  display: flex;
+}
+
 .feature-title {
+  margin-top: 94px;
   text-decoration: none;
   color: var(--title-color);
   font-weight: 700;
