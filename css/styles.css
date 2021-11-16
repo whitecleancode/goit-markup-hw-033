@@ -18,6 +18,7 @@ text-color = #757575
   --black: #000000;
 }
 body {
+  margin: 0px;
   color: #757575;
   background-color: var(--header-color);
   font-style: normal;
@@ -55,6 +56,8 @@ p {
 .header {
   height: 80px;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ffffff;
 }
 
@@ -203,9 +206,13 @@ p {
 
 .item {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+}
+
+.items {
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -229,28 +236,69 @@ p {
   font-size: 16px;
 }
 
-.section-team {
+.section.team {
   background-color: #f5f4fa;
 }
 
+.section-title.caption {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
 .section-title.team {
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  background-color: #ffffff;
+}
+
+.teamlist {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.correction {
+  padding-right: 30px;
+}
+
+.secondary-text.change-font {
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.one {
+  margin-bottom: 94px;
 }
 
 /* footer */
 .footer {
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
   background-color: var(--hero-ftr-color);
 }
 .logo-white {
   color: #ffffff;
 }
+
+.logo.ftr {
+  padding-top: 60px;
+  margin: 0px;
+  padding-left: 215px;
+  padding-bottom: 20px;
+}
+
 .place {
+  padding-left: 215px;
+  padding-bottom: 9px;
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
@@ -260,7 +308,15 @@ p {
 
 .mail.down,
 .tel.down {
+  margin: 0px;
+  padding-left: 215px;
   color: rgba(255, 255, 255, 0.6);
+}
+.mail.down {
+  padding-bottom: 9px;
+}
+.tel.down {
+  padding-bottom: 60px;
 }
 
 /*  PORTfolio */
