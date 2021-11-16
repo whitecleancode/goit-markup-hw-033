@@ -16,44 +16,54 @@
   <body class="page">
     <!-- Шапка -->
     <header class="header">
-      <a class="logo" href="./index.html" class="href" lang="en"
-        >Web<span class="logo-black">Studio</span></a
-      >
-      <nav>
-        <ul class="site-nav list">
+      <div class="container header">
+        <a class="logo" href="./index.html" class="href" lang="en"
+          >Web<span class="logo-black">Studio</span></a
+        >
+        <nav class="nav">
+          <ul class="site-nav list">
+            <li class="item">
+              <a class="link" href="./index.html">Студия</a>
+            </li>
+            <li class="item">
+              <a class="link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item">
+              <a class="link contacts" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list hdr-contacts">
           <li>
-            <a class="link" href="./index.html">Студия</a>
+            <a class="mail" href="mailto:info@devstudio.com" lang="en"
+              >info@devstudio.com</a
+            >
           </li>
-          <li>
-            <a class="link current" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li>
-            <a class="link" href="./contacts.html">Контакты</a>
+          <li class="space">
+            <a class="tel" href="tel:+380999999999">+380999999999</a>
           </li>
         </ul>
-      </nav>
-      <a class="mail" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
-      <a class="tel" href="tel:+380999999999">+380999999999</a>
+      </div>
     </header>
 
     <!-- Мэйн -->
     <section>
-      <h1>Мэйн</h1>
+      <h1 hidden>web-studio portfolio</h1>
 
-      <ul class="list">
-        <li>
+      <ul class="btnlist list">
+        <li class="btnitem">
           <button class="button-portfolio" type="button">Все</button>
         </li>
-        <li>
+        <li class="btnitem">
           <button class="button-portfolio" type="button">Веб-сайты</button>
         </li>
-        <li>
+        <li class="btnitem">
           <button class="button-portfolio" type="button">Приложения</button>
         </li>
-        <li>
+        <li class="btnitem">
           <button class="button-portfolio" type="button">Дизайн</button>
         </li>
-        <li>
+        <li class="btnitem">
           <button class="button-portfolio" type="button">Маркетинг</button>
         </li>
       </ul>
@@ -100,7 +110,11 @@
           <p class="gallery-descr">Маркетинг</p>
         </li>
         <li>
-          <img src="./images/img-9.jpg" width="370" alt="работа за компьютером" />
+          <img
+            src="./images/img-9.jpg"
+            width="370"
+            alt="работа за компьютером"
+          />
           <h2 class="gallery-captions">Growing Business</h2>
           <p class="gallery-descr">Приложение</p>
         </li>
@@ -109,10 +123,16 @@
 
     <!-- Подвал -->
     <footer class="footer">
-      <a href="./index.html" class="logo" lang="en">Web<span class="logo-white">Studio</span></a>
-      <address>г. Киев, бульвар Леси Украинки 26</address>
-      <a class="mail down" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="tel down" href="tel:+380999999999">+380999999999</a>
+      <div class="container ftr">
+        <a href="./index.html" class="logo ftr" lang="en"
+          >Web<span class="logo-white">Studio</span></a
+        >
+        <address class="place">г. Киев, бульвар Леси Украинки 26</address>
+        <a class="mail down" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+        <a class="tel down" href="tel:+380999999999">+380999999999</a>
+      </div>
     </footer>
   </body>
 </html>

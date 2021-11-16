@@ -320,6 +320,7 @@ p {
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   color: #ffffff;
   background-color: var(--hero-ftr-color);
 }
@@ -360,6 +361,7 @@ p {
 /*  PORTfolio */
 .button-portfolio {
   cursor: pointer;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.71;
@@ -385,4 +387,18 @@ p {
 .gallery-descr {
   font-size: 16px;
   line-height: 1.87;
+}
+.btnlist {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.btnlist > .btnitem {
+  margin-right: 8px;
+}
+.btnlist > .btnitem:last-child {
+  margin-right: 0px;
 }
