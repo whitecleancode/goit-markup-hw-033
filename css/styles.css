@@ -43,6 +43,7 @@ p {
 }
 
 .list {
+  margin: 0px;
   list-style: none;
 }
 
